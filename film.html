@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=devices-width, initial-scale=1">
+    
+    <title>Silent Film Era</title>
+    
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/myjs.js"></script>
+    
+</head>
+<body id="page5">
+    <!--Navigation Bar-->
+    <header>
+		<span class="toggle-button">
+        	<div id="mbw-top" class="menu-bar menu-bar-top"></div>
+        	<div id="mbw-middle" class="menu-bar menu-bar-middle"></div>
+        	<div id="mbw-bottom" class="menu-bar menu-bar-bottom"></div>
+        </span>
+		<div class="menu-wrap">
+			<div class="menu-sidebar">
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gfp.html">Gorges, Falls, State Parks</a></li>
+					<li class="menu-item-has-children"><a href="#">Educational Community</a>
+						<span class="sidebar-menu-arrow"></span>
+						<ul class="sub-menu">
+							<li><a href="cornellu.html">Cornell University</a></li>
+                            <li><a href="ithacac.html">Ithaca College</a></li>
+						</ul>
+					</li>
+					<li><a href="film.html">Silent Film Era</a></li>
+                    <li><a href="explore.html">Explore Ithaca</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>			
+			</div>
+		</div>
+	</header>
+    
+    <!--Container with 1 row 2 columns open-->
+    <div class="container" id="film">
+        <!--Background video-->
+        <video playsinline autoplay muted loop id="bgvid">
+            <source src="media/ithaca.mp4" type="video/mp4">
+        </video>
+        
+        <div class="row" id="verbiage">
+            <div class="col-xs-12 col-md-6">
+                <p class="text">In 1912 Theodore Wharton, an employee of Essanay Studios, visited family in Ludlowville, NY. While in the area he filmed a Cornell vs Penn State football game being played on Percy Field (now Ithaca High School). Intrigued with the beauty of Ithaca, Ted invited his brother Leopold to join him in the small northwestern New York town. In 1915 they set up Wharton, Inc..
+                </p>
+                <p class="text">The dramatic gorges and the vast Cayuga Lake landscape were two unique natural backdrops used in the five years the Wharton brothers turned the thriving college town upside down and into The Biggest Little City. Ithaca and its townspeople were willing accomplices to the Whartons’ moviemaking escapades.  Leo needed a trolley to fly off Stewart Avenue Bridge; the city sold him one. When Ted needed furniture, homes, or a surfeit of skunks for any given scene; the locals eagerly complied. A call for extras would be immediately answered by townies and students alike. Many of their production team was moonlighting while employed at Cornell or Ithaca College.
+                </p>   
+            </div>    
+            <div class="col-xs-12 col-md-6">
+                <p class="text">The Wharton’s were known for their serials featuring breathtaking stunts. One of the most famous stunts (at least locally) was for the film, A Prince of India. They bought an old trolley car from the Ithaca Traction Corporation, rigged a track, and filmed the car careening off the Stewart Avenue Bridge. Trolley car #305 landed in the Fall Creek gorge without a hitch to the amazement of over 1,000 spectators.
+                Hence, the popular term “cliffhanger,” referring to a suspenseful plot technique designed to keep the audience wanting more, was named after this movie series filmed by the two brothers.
+                </p>
+                <p class="text">It is estimated that the Wharton brothers had a hand in over 700 films. The impact of Ted and Leo Wharton’s filmmaking is indelible, not only on Ithaca’s history but film history. In their story we have a glimpse of what it’s like to be on the cutting edge of an industry so seductive, so unique; you’d expect to only see it in the movies. 
+                </p>        
+            </div>
+            <!--Note on clip playing and link via youTube-->
+            <div id="notes" class="col-xs-12">
+                <p class="text">The background clip is from 1916, Beatrice Fairfax episode #6, The Forbidden Room.
+                <br>
+                If your device does not support video, you can watch the clip here <a href="https://youtu.be/2nHyae3eEro?t=1s" target="_blank">
+                    <img id="ut" src="images/ut-icon.jpg" alt="youTube icon" style="border: 0"></a></p>
+            </div>
+        </div>
+    </div>
+    
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/bootstrap.js"></script>    
+</body>
+</html>

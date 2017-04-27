@@ -1,0 +1,465 @@
+html, body, nav, footer {
+    margin: 0;
+    padding: 0;}
+
+a {
+	text-decoration: none;}
+
+ul {
+	padding-left: 0;}
+
+li {
+	list-style: none;}
+
+* {
+	box-sizing: border-box;}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+    color: #2E4367;}
+
+body#page5 {
+    background-image: url(../images/ithaca-still3.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;}
+
+#cupage, #icpage, #about, #explore {
+    background-color: #F3F1F1;}
+
+#gfp {
+    background-color: #F3F1F1;}
+
+::selection {
+	background-color: #EBEBF2;
+	color: #83828D;}
+
+/*Navigaton Menu*/		
+.menu-wrap {
+	background-color: #2E4367;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 280px;
+	margin-left: -280px;
+	font-size: 1em;
+	font-weight: 700;
+	overflow: auto;
+	transition: .25s;
+	z-index: 10;}
+
+.menu-show {
+	margin-left: 0;
+	box-shadow: 4px 2px 15px 1px #B9ADAD;}
+
+.menu-sidebar {
+	margin: 75px 0 80px 10px;
+	position: relative;
+	top: 70px;}
+
+.menu-sidebar li {
+	padding: 18px 22px 0;}
+
+.menu-sidebar li > a {
+	color: #F3F3F3;
+	font-size: 1.18em;
+	position: relative;}
+
+.menu-sidebar li > a::after {
+	content: "";
+	display: block;
+	height: 0.15em;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 50%;
+	transform: translate(-50%);
+	background-image: linear-gradient(to right, transparent 50.3%, #E28747 50.3%);
+	transition: background-position .2s .1s ease-out;
+	background-size: 200% auto;}
+
+.menu-sidebar li > a:hover::after {
+	background-position: -100% 0;}
+
+.menu-sidebar .menu-item-has-children {
+	position: relative;}
+
+.menu-sidebar .menu-item-has-children .sub-menu {
+	display: none;}
+
+.sidebar-menu-arrow::after {
+	content: "\f107";
+	font-family: 'FontAwesome';
+	padding: 10px;
+	color: #E28747;
+	position: relative;}
+
+.sidebar-menu-arrow:hover::after {
+	cursor: pointer;
+	color: #F3F3F3;}
+
+.sidebar-menu-arrow:active::after {
+	top: 2px;}
+
+
+/*Hamburger Button*/
+.toggle-button {
+	position: fixed;
+	width: 44px;
+	height: 40px;
+	top: 30px;
+	left: 20px;
+	padding: 4px;
+	transition: .25s;
+	z-index: 15;}
+
+.toggle-button:hover {
+	cursor: pointer;}
+
+.toggle-button .menu-bar {
+	position: absolute;
+	border-radius: 2px;
+	width: 80%;
+	transition: .5s;}
+
+.toggle-button .menu-bar-top {
+	border: 4px solid #2E4367;
+	border-bottom: none;
+	top: 0;}
+
+.toggle-button .menu-bar-middle {
+	height: 4px;
+	background-color: #2E4367;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	top: 4px;}
+
+.toggle-button .menu-bar-bottom {
+	border: 4px solid #2E4367;
+	border-top: none;
+	top: 22px;}
+
+#mbw-top {
+	border: 4px solid #F3F3F3;
+	border-bottom: none;
+	top: 0;}
+
+#mbw-middle {
+	height: 4px;
+	background-color: #F3F3F3;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	top: 4px;}
+
+#mbw-bottom {
+	border: 4px solid #F3F3F3;
+	border-top: none;
+	top: 22px;}
+
+.button-open {
+	left: 25px;}
+
+.button-open .menu-bar-top {
+	border-color: #F3F3F3;
+	transform: rotate(45deg) translate(8px, 8px);
+	transition: .5s;}
+
+.button-open .menu-bar-middle {
+	background-color: #F3F3F3;
+	transform: translate(230px);
+	transition: .1s ease-in;
+	opacity: 0;}
+
+.button-open .menu-bar-bottom {
+	border-color: #F3F3F3;
+	transform: rotate(-45deg) translate(7px, -7px);
+	transition: .5s;}
+
+
+/* Home Page */
+.himg {
+    background-image: url("../images/cayuga-lake5.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;}
+
+.htxt1 {
+    text-align: center;
+    margin-top: 150px;
+    color: #F3F3F3;
+    text-shadow: 2px 4px 3px #111;}
+
+.htxt2 {
+    text-align: center;
+    margin-top: 70px;
+    color: #F3F3F3;
+    text-shadow: 2px 4px 3px #111;}
+
+.htxt1 h1 {
+    font-size: 80px;}
+
+.htxt2 p {
+    font-size: 23px;
+    padding: 20px;}
+
+
+/*GFP Page*/
+#r1 {
+    margin-top: 70px;}
+
+#r2, #r3, #r4 {
+    margin-top: 30px;}
+
+.row h5 {
+    text-align: center;}
+
+#img1, #img1m, #img2, #img2m, #img3:hover {
+    -moz-box-shadow: 0 13px 17px 0 rgba(46,67,103,0.8),0 18px 51px 0 rgba(46,67,103,0.8);
+    -webkit-box-shadow: 0 13px 17px 0 rgba(46,67,103,0.8),0 18px 51px 0 rgba(46,67,103,0.8);
+    box-shadow: 0 13px 17px 0 rgba(46,67,103,0.8),0 18px 51px 0 rgba(46,67,103,0.8);}
+
+.gorge {
+    font-size: 16px;
+    margin-top: 18px;}
+
+.gorge h5 {
+    text-align: left;}
+
+.modal-footer {
+    text-align: left;}
+
+.close {
+    font-size: 30px;
+    font-weight: bolder;}
+
+.modal-header .close:hover {
+	cursor: pointer;
+	color: #E28747;
+    opacity: 1;}    
+
+#img2, #img2m, #img1, #img1m {
+    display: none;}
+
+
+/*College Pages*/
+#carousel {
+    margin-top: 70px;}
+    
+.carousel-inner img {
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;}
+
+.carousel .carousel-control {
+    background-image: none !important;}
+
+.carousel-caption {
+    font-size: 20px;
+    font-weight: bold;}
+
+.cu1, .ic1 {
+    margin-top: 70px;
+    text-align: left;
+    font-size: 15px;}
+
+.cu2, .ic2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;}
+
+
+/*About Page*/
+#abtimg {
+    margin-top: 70px;}
+
+#abtinfo {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 25px;}
+
+#gly {
+    color: #E28747;}
+
+.copy {
+    width: 265px;
+    margin: 0 auto;
+    margin-top: 25px;}
+    
+.abttxt {
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.9em;
+    font-size: 16px;}
+
+.abthd {
+    text-align: left;
+    margin-top: 70px;
+    color: #E28747;}
+
+
+/*Film Page*/
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);}
+       
+video { 
+    display: block;}
+
+video#bgvid {
+    transition: 1s opacity;}
+
+#verbiage {
+    margin-top: 70px;
+    background-color: rgba(0,0,0,0.1)}
+
+.text {
+    color: #F3F3F3;
+    font-size: 17px;
+    text-shadow: 2px 4px 3px #111;
+    line-height: 1.9em;}
+
+#ut {
+    border-radius: 5px;}
+
+#notes {
+    margin-top: 30px;
+    text-align: center;}
+
+
+/*Explore Page*/
+.etxt1 {
+    width: 300px;
+    margin: 0 auto;
+    text-align: right;
+    margin-top: 70px;
+    color: #E28747;
+    font-size: 60px;}
+
+.etxt2 {
+    width: 300px;
+    margin: 0 auto;
+    color: #2E4367;
+    text-align: right;
+    margin-top: 15px;}
+
+.etxt3, .etxt4 {
+    width: 300px;
+    margin: 0 auto;
+    text-align: right;
+    margin-top: 70px;
+    color: #2E4367;
+    line-height: 5em;
+    font-size: 15px;}
+
+.glyphicon-spin:hover {
+    -webkit-animation: spin 500ms infinite linear;
+    animation: spin 500ms infinite linear;}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);}}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);}}
+
+
+
+/*Media Queries*/
+/*GPF Page*/
+@media only screen and (max-width: 736px) {
+    #img2, #img2m, #img3 {
+        display: none;}
+    #img1, #img1m {
+        display: block;}}
+
+@media only screen and (min-width: 737px) and (max-width: 990px) {
+    #img1, #img1m, #img3 {
+        display: none;}
+    #img2, #img2m {
+        display: block;}}
+
+@media only screen and (min-width: 991px) {
+    #img1, #img1m, #img2, #img2m {
+        display: none;}
+    #img3 {
+        display: block;}}
+
+@media only screen and (max-width:736px) {
+    #img1m {
+        margin-top: 30px;}}
+
+@media only screen and (min-width:737px) and (max-width: 990px) {
+    #img2m {
+        margin-top: 30px;}}
+
+
+/*Explore Page*/
+@media only screen and (max-width: 1200px) {
+    .etxt4 {
+        margin-top: 0px;}}
+
+
+/*About Page*/
+@media only screen and (max-width: 1024px) {
+    .abthd {
+        margin-top: 0px;}}
+
+@media only screen and (max-width: 1200px) {
+    #about {
+        background-color: #F3F1F1;}}
+
+
+/*College Pages*/
+@media only screen and (max-width: 1024px) {
+    .ic1, .cu1 {
+        margin-top: 30px;}}
+
+@media only screen and (max-width: 1200px) {
+    #cupage, #icpage {
+        background-color: #F3F1F1;}}
+
+
+
+
+/*@media screen and (max-device-width: 736px) {
+    video#bgvid {
+        display: none;}
+    #bgimg {
+        display: block;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;}}*/
+    
+
+
+
+ 
+
+
