@@ -17,3 +17,13 @@ $(document).ready(function() {
 
 });
 
+//Navigation Small Device//
+/*$(document).ready (function() {
+    if (screen > 768) {
+        .css('.menu-wrap');}
+    else {
+        .css('.menu-wrap-sd');}
+        
+    });*/
+        
+         
