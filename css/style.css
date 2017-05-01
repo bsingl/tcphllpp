@@ -422,7 +422,7 @@ video#bgvid {
     .htxt1 h1 {
         font-size: 3em;}
     .htxt2 p {
-        font-size: 1em;}
+        font-size: 1.05em;}
     .htxt1 {
         margin-top: 70px;}
     .htxt2 {
@@ -468,7 +468,9 @@ video#bgvid {
 /*Video Page*/
 @media only screen and (max-width: 768px) {
     .text {
-        padding: 5px;}}
+        padding: 5px;}
+    #notes {
+        margin-top: 0px;}}
 
 
 
