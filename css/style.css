@@ -52,11 +52,10 @@ body#page5 {
 	width: 280px;
 	margin-left: -280px;
 	font-size: 1em;
-    word-spacing: .20em;
 	font-weight: 700;
 	overflow: auto;
 	transition: .25s;
-	z-index: 10;}
+	z-index: 16;}
 
 .menu-show {
 	margin-left: 0;
@@ -121,7 +120,7 @@ body#page5 {
 	left: 20px;
 	padding: 4px;
 	transition: .25s;
-	z-index: 15;}
+	z-index: 17;}
 
 .toggle-button:hover {
 	cursor: pointer;}
@@ -361,7 +360,7 @@ video#bgvid {
     border-radius: 5px;}
 
 #notes {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;}
 
 
