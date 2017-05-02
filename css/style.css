@@ -229,11 +229,12 @@ body#page5 {
     margin-top: 30px;}
 
 .row h5 {
+    padding: 10px;
     text-align: center;
     font-size: 1em;
     word-spacing: .20em;}
 
-#img1, #img1m, #img2, #img2m, #img3:hover {
+#img1, #img2, #img3:hover {
     -moz-box-shadow: 0 13px 17px 0 rgba(46,67,103,0.8),0 18px 51px 0 rgba(46,67,103,0.8);
     -webkit-box-shadow: 0 13px 17px 0 rgba(46,67,103,0.8),0 18px 51px 0 rgba(46,67,103,0.8);
     box-shadow: 0 13px 17px 0 rgba(46,67,103,0.8),0 18px 51px 0 rgba(46,67,103,0.8);}
@@ -255,7 +256,7 @@ body#page5 {
 	color: #E28747;
     opacity: 1;}    
 
-#img2, #img2m, #img1, #img1m {
+#img2, #img1 {
     display: none;}
 
 
@@ -441,19 +442,19 @@ video#bgvid {
 
 /*GPF Page*/
 @media only screen and (max-width: 736px) {
-    #img2, #img3 {
+    #img2, #img2m, #img3 {
         display: none;}
-    #img1 {
+    #img1, #img1m {
         display: block;}}
 
 @media only screen and (min-width: 737px) and (max-width: 990px) {
-    #img1, #img3 {
+    #img1, #img1m, #img3 {
         display: none;}
-    #img2 {
+    #img2, #img2m {
         display: block;}}
 
 @media only screen and (min-width: 991px) {
-    #img1, #img2 {
+    #img1, #img1m, #img2, #img2m {
         display: none;}
     #img3 {
         display: block;}}
@@ -462,6 +463,19 @@ video#bgvid {
     .gorge {
         padding: 5px;}}
 
+@media only screen and (max-width: 736px) {
+    #img1m {
+        margin-top: 30px;}
+    .row h5 {
+        padding: 5px;}}
+
+@media only screen and (min-width: 737px) and (max-width: 991px) {
+    #img2m {
+        margin-top: 35px;}
+    #r3, #r4 {
+        margin-top: 0px;}
+    .row h5 {
+        padding: 5px;}}
 
 
 /*Video Page*/
