@@ -27,6 +27,7 @@ body#page5 {
     height: 100%;
     width: 100%;
     margin: 0 auto;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -347,8 +348,7 @@ video#bgvid {
     transition: 1s opacity;}
 
 #verbiage {
-    margin-top: 70px;
-    background-color: rgba(0,0,0,0.1)}
+    margin-top: 70px;}
 
 .text {
     color: #F3F3F3;
