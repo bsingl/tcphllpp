@@ -1,4 +1,4 @@
-html, body, nav, footer {
+html, body, nav, video {
     margin: 0;
     padding: 0;}
 
@@ -27,7 +27,6 @@ body#page5 {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -53,7 +52,7 @@ body#page5 {
 	width: 280px;
 	margin-left: -280px;
 	font-size: 1em;
-	font-weight: 700;
+	font-weight: 700
 	overflow: auto;
 	transition: .25s;
 	z-index: 16;}
